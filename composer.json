@@ -1,0 +1,24 @@
+{
+    "name": "empaphy/polyphill-apcu",
+    "description": "A metapackage that installs an APCU polyfill if needed, or removes it if redundant.",
+    "version": "1.0.0",
+    "type": "metapackage",
+    "keywords": ["compatibility", "polyfill", "portable", "shim", "apcu"],
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/empaphy/polyphill-apcu/issues"
+    },
+    "require": {
+        "ext-apc": "*",
+        "symfony/polyfill-apcu": "^1"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-master"
+    },
+    "provide": {
+        "ext-apcu": "*"
+    },
+    "suggest": {
+        "ext-apcu": "For best performance"
+    }
+}
